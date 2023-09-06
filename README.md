@@ -30,6 +30,10 @@ To run this app and explore the ad integration features, follow these steps:
 
 5. Navigate to the "Main" activity and explore the different ad types.
 
+## APK File
+
+You can download the APK file of this app from the root directory of this repository. Simply click the following link to download the APK file: [AdIntegrationApp.apk](AdIntegrationApp.apk)
+
 ## AdMob Integration
 
 To integrate your own AdMob ads into this app, follow these steps:
