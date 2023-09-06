@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">coffeeBeans</string>
+    <string name="run_ad">Run Ad</string>
+    <string name="reward_yourself">Reward Yourself!</string>
 </resources>
