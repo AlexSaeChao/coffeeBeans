@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdError;
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
   private AdView bannerAdView;
   private Button interstitialAdButton;
   private Button rewardAdButton;
+  private TextView rewardAmountTextView;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
     bannerAdView = findViewById(R.id.bannerAdView);
     interstitialAdButton = findViewById(R.id.MainActivityStartAdButton);
     rewardAdButton = findViewById(R.id.MainActivityRewardAdButton);
+    rewardAmountTextView = findViewById(R.id.MainActivityRewardAmountTextView);
+
 
     initializeMobileAds();
     setupBannerAd();
@@ -193,6 +197,7 @@ public class MainActivity extends AppCompatActivity {
   }
 
   private void setupRewardedAdButton() {
+
     rewardAdButton.setOnClickListener(v -> {
       if (rewardedAd != null) {
         Activity activityContext = MainActivity.this;
@@ -204,9 +209,9 @@ public class MainActivity extends AppCompatActivity {
             String rewardType = rewardItem.getType();
             Log.d(TAG, "The user earned the reward. Reward Amount: " + rewardAmount + " Reward Type: " + rewardType);
 
-            // Display a toast for the successful reward.
-            String toastMessage = "Congratulations! You've earned " + rewardAmount + " " + rewardType + " reward.";
-            Toast.makeText(activityContext, toastMessage, Toast.LENGTH_SHORT).show();
+            // Update the TextView to display the reward amount.
+            String rewardMessage = "Reward: " + rewardAmount + " " + rewardType;
+            rewardAmountTextView.setText(rewardMessage);
           }
         });
       } else {

@@ -34,6 +34,22 @@ To run this app and explore the ad integration features, follow these steps:
 
 You can download the APK file of this app from the root directory of this repository. Simply click the following link to download the APK file: [AdIntegrationApp.apk](AdIntegrationApp.apk)
 
+## Screenshots
+
+Here are some screenshots of the app:
+
+- Main activity before showing a rewarded ad:
+  ![Main Activity Before Reward](images/coffeeBean_main_before_reward.png)
+
+- Main activity after showing a rewarded ad:
+  ![Main Activity After Reward](images/coffeeBean_main_after_reward.png)
+
+- Interstitial ad:
+  ![Interstitial Ad](images/coffeeBean_interstitial_ad.png)
+
+- Rewarded ad:
+  ![Rewarded Ad](images/coffeeBean_reward_ad.png)
+
 ## AdMob Integration
 
 To integrate your own AdMob ads into this app, follow these steps:
